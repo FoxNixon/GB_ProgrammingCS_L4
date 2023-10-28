@@ -22,13 +22,14 @@ void GetSummOfNumbers(int number){
 
 void PrintArray(){
     int[] arr = new int[8];
+    int arrLength = 8;
     Console.Write("[");
 
-    for (int i =0; i < 8; i++){
+    for (int i =0; i < arrLength; i++){
         Random rand = new Random();
         arr[i] = rand.Next(0, 99);
         Console.Write(arr[i]);
-        if (i < 8-1){
+        if (i < arrLength-1){
             Console.Write(", ");
         }
     }
@@ -36,6 +37,6 @@ void PrintArray(){
 }
 
 
-//CalculateAPowB(3, 3);
-//GetSummOfNumbers(1234);
+CalculateAPowB(3, 3);
+GetSummOfNumbers(1234);
 PrintArray();
