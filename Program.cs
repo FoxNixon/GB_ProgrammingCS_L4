@@ -15,8 +15,27 @@ void GetSummOfNumbers(int number){
         summ = summ + number%10;
         number = number / 10;
     }
+
     Console.WriteLine(" is " + summ);
 }
 
+
+void PrintArray(){
+    int[] arr = new int[8];
+    Console.Write("[");
+
+    for (int i =0; i < 8; i++){
+        Random rand = new Random();
+        arr[i] = rand.Next(0, 99);
+        Console.Write(arr[i]);
+        if (i < 8-1){
+            Console.Write(", ");
+        }
+    }
+    Console.WriteLine("]");
+}
+
+
 //CalculateAPowB(3, 3);
-GetSummOfNumbers(1234);
+//GetSummOfNumbers(1234);
+PrintArray();
